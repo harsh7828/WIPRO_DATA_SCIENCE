@@ -1,0 +1,13 @@
+# Assignment 4
+
+numbers = {25, 10, 45, 5, 60, 30}
+
+print("Set:", numbers)
+
+print("Maximum value:", max(numbers))
+print("Minimum value:", min(numbers))
+
+
+output : Set: {5, 10, 45, 25, 60, 30}
+Maximum value: 60
+Minimum value: 5
