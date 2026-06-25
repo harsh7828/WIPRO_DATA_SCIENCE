@@ -1,0 +1,17 @@
+# Assignment 2
+
+n = int(input("Enter the number of lines to read: "))
+
+file = open("sample.txt", "r")
+
+for i in range(n):
+    line = file.readline()
+    if not line:
+        break
+    print(line, end="")
+
+file.close()
+
+output : Enter the number of lines to read: 2
+Hello
+Welcome to Python
