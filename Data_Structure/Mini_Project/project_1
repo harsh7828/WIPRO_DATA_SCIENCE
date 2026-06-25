@@ -1,0 +1,40 @@
+# Data Structure Project 1
+# Dictionary of people and interesting facts
+
+people = {
+    "Jeff": "Is afraid of dogs.",
+    "David": "Plays the piano.",
+    "Jason": "Can fly an airplane."
+}
+
+print("Original List:\n")
+
+for person, fact in people.items():
+    print(f"{person}: {fact}")
+
+people["Jeff"] = "Is afraid of heights."
+
+people["Jill"] = "Can hula dance."
+
+print("\nUpdated List:\n")
+
+for person, fact in people.items():
+    print(f"{person}: {fact}")
+
+
+
+
+Sample Output
+Original List:
+
+Jeff: Is afraid of dogs.
+David: Plays the piano.
+Jason: Can fly an airplane.
+
+Updated List:
+
+Jeff: Is afraid of heights.
+David: Plays the piano.
+Jason: Can fly an airplane.
+Jill: Can hula dance.
+    
