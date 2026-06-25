@@ -1,0 +1,14 @@
+# Assignment 1
+
+file = open("sample.txt", "r")
+
+content = file.read()
+
+print(content)
+
+file.close()
+
+
+output : Hello
+Welcome to Python
+File Handling
