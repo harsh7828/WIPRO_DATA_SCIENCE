@@ -5,3 +5,9 @@ if num1 % 10 == num2 % 10:
     print(True)
 else:
     print(False)
+
+
+
+output : Enter first number: 27
+Enter second number: 57
+True
