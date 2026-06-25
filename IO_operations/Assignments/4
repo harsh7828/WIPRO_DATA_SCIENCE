@@ -1,0 +1,14 @@
+# Assignment 4
+
+file = open("sample.txt", "r")
+
+lines = []
+
+for line in file:
+    lines.append(line.strip())
+
+file.close()
+
+print(lines)
+
+output : ['Hello', 'Welcome to Python', 'File Handling']
