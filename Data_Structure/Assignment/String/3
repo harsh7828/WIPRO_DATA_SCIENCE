@@ -1,0 +1,11 @@
+# Assignment 3
+
+text = input("Enter a string: ")
+
+first_two = text[:2]
+result = first_two * len(text)
+
+print(result)
+
+output : Enter a string: Wipro
+WiWiWiWiWi
