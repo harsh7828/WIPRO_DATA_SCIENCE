@@ -1,0 +1,19 @@
+# Assignment 1
+
+numbers = {10, 20, 30, 40, 50}
+
+print("Original Set:", numbers)
+
+item = int(input("Enter the number to remove: "))
+
+if item in numbers:
+    numbers.remove(item)
+    print("Updated Set:", numbers)
+else:
+    print("Item not found in the set.")
+
+
+
+    output : Original Set: {40, 10, 50, 20, 30}
+Enter the number to remove: 30
+Updated Set: {40, 10, 50, 20}
