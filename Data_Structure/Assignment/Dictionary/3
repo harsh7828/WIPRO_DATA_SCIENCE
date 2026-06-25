@@ -1,0 +1,14 @@
+# Assignment 3
+
+student = {
+    "Name": "John",
+    "Age": 20,
+    "Course": "Python"
+}
+
+key = input("Enter the key to search: ")
+
+if key in student:
+    print("Key exists.")
+else:
+    print("Key does not exist.")
