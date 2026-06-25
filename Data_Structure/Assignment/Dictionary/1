@@ -1,0 +1,9 @@
+# Assignment 1
+
+student = {0: 10, 1: 20}
+
+print("Original Dictionary:", student)
+
+student[2] = 30
+
+print("Updated Dictionary:", student)
