@@ -1,0 +1,12 @@
+
+# Count how many times "Alex" appears in a string
+
+text = input("Enter a sentence: ")
+
+count = text.count("Alex")
+
+print("Number of times Alex appears:", count)
+
+output: 
+enter a sentence: Hi Alex WelcomeAlex Bye Alex.
+Number of times Alex appears: 3
