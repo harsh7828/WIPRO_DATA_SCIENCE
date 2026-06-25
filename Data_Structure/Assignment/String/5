@@ -1,0 +1,14 @@
+# Assignment 5
+
+text = input("Enter a string: ")
+n = int(input("Enter n: "))
+
+last_chars = text[-n:]
+result = last_chars * n
+
+print(result)
+
+
+output : Enter a string: Wipro
+Enter n: 3
+propropro
