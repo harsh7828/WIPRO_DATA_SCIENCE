@@ -1,0 +1,12 @@
+import sys
+
+message = sys.argv[1]
+
+print("File Name:", sys.argv[0])
+print("Welcome Message:", message)
+
+
+terminal : python assignment2.py Welcome
+output : File Name: assignment2.py
+Welcome Message: Welcome
+terminal : python assignment2.py "Welcome to Python"
