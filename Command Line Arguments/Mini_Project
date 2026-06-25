@@ -1,0 +1,19 @@
+import sys
+
+string1 = list(map(int, sys.argv[1].split(',')))
+string2 = list(map(int, sys.argv[2].split(',')))
+numbers = list(map(int, sys.argv[3].split(',')))
+
+happiness = 0
+
+for num in numbers:
+    if num in string1:
+        happiness += 1
+    elif num in string2:
+        happiness -= 1
+
+print("Final happiness:", happiness)
+
+
+
+output : Final happiness: 1
