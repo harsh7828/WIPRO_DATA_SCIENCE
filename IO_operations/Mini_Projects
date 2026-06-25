@@ -1,0 +1,38 @@
+# IO Operations - Project 1
+
+from collections import Counter
+import string
+
+filename = input("Enter the file name: ")
+
+with open(filename, "r") as file:
+    lines = file.readlines()
+
+# Find meeting time
+line_count = len(lines)
+
+if line_count == 0:
+    print("The file is empty.")
+else:
+    if line_count > 12:
+        meeting_time = f"{line_count - 12} PM"
+    else:
+        meeting_time = f"{line_count} AM"
+
+    # Count word frequency
+    words = []
+
+    for line in lines:
+        # Remove punctuation and split into words
+        line = line.translate(str.maketrans("", "", string.punctuation))
+        words.extend(line.split())
+
+    # Convert words to lowercase
+    words = [word.lower() for word in words]
+
+    word_count = Counter(words)
+
+    meeting_place = word_count.most_common(1)[0][0].capitalize()
+
+    print("Meeting time:", meeting_time)
+    print("Meeting place:", meeting_place + " Street")
