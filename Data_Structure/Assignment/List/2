@@ -1,0 +1,10 @@
+# Assignment 2
+
+numbers = [10, 20, 30, 40, 50]
+
+print("Original List:", numbers)
+
+item = int(input("Enter a number to append: "))
+numbers.append(item)
+
+print("Updated List:", numbers)
