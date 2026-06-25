@@ -1,0 +1,48 @@
+# Exception Handling - Project 1
+
+try:
+    filename = input("Enter the file name: ")
+
+    file = open(filename, "r")
+
+    purchased_items = 0
+    free_items = 0
+    amount_to_pay = 0
+    discount = 0
+
+    for line in file:
+        line = line.strip()
+
+        if line == "":
+            continue
+
+        data = line.split()
+
+        if data[0].lower() == "discount":
+            discount = int(data[1])
+
+        elif data[1].lower() == "free":
+            free_items += 1
+
+        else:
+            purchased_items += 1
+            amount_to_pay += int(data[1])
+
+    file.close()
+
+    final_amount = amount_to_pay - discount
+
+    print("No of items purchased:", purchased_items)
+    print("No of free items:", free_items)
+    print("Amount to pay:", amount_to_pay)
+    print("Discount given:", discount)
+    print("Final amount paid:", final_amount)
+
+except FileNotFoundError:
+    print("Error: File not found.")
+
+except ValueError:
+    print("Error: Invalid data in file.")
+
+except Exception as e:
+    print("An error occurred:", e)
