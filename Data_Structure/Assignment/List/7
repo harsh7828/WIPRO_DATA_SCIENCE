@@ -1,0 +1,11 @@
+# Assignment 7
+
+numbers = [10, 20, 30, 40, 50]
+
+print("Original List:", numbers)
+
+index = int(input("Enter the index to remove: "))
+
+numbers.pop(index)
+
+print("Updated List:", numbers)
