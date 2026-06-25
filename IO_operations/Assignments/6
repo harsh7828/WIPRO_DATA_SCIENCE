@@ -1,0 +1,15 @@
+# Assignment 6
+
+word = input("Enter the word to search: ").lower()
+
+file = open("sample.txt", "r")
+
+content = file.read().lower()
+
+file.close()
+
+words = content.split()
+
+count = words.count(word)
+
+print("Frequency:", count)
