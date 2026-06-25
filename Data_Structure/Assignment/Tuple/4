@@ -1,0 +1,10 @@
+# Assignment 4
+
+numbers = (10, 20, 30, 40, 50)
+
+item = int(input("Enter the number to find: "))
+
+if item in numbers:
+    print("Index:", numbers.index(item))
+else:
+    print("Item not found.")
