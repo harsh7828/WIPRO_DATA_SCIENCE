@@ -1,0 +1,55 @@
+#This is file_1
+
+# name_module.py
+
+def ispalindrome(name):
+    if name == name[::-1]:
+        print("Yes it is a palindrome.")
+    else:
+        print("No it is not a palindrome.")
+
+
+def count_the_vowels(name):
+    vowels = "aeiouAEIOU"
+    count = 0
+
+    for ch in name:
+        if ch in vowels:
+            count += 1
+
+    print("No of vowels:", count)
+
+
+def frequency_of_letters(name):
+    frequency = {}
+
+    for ch in name:
+        if ch != " ":
+            if ch in frequency:
+                frequency[ch] += 1
+            else:
+                frequency[ch] = 1
+
+    print("Frequency of letters:")
+    for key, value in frequency.items():
+        print(f"{key}-{value}", end=" ")
+    print()
+
+
+
+
+
+
+#this is file_2
+
+# main.py
+
+import name_module
+
+name = input("Enter a name: ")
+
+name_module.ispalindrome(name)
+name_module.count_the_vowels(name)
+name_module.frequency_of_letters(name)
+
+    
